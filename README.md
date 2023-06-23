@@ -52,10 +52,9 @@ We started off by creating a pipelines for dummy classifier as our baseline mode
 ## Results
 
 The best model was the logistic regression model based on the accuracy score of 0.87. 
+                    Confusion Matrix                                            ROC Curve
+<img src="https://i.imgur.com/nYYECfT.png" width=50% height=50%> <img src="https://i.imgur.com/bQOlv9I.png" width=50% height=50%>
 
-<img src="https://i.imgur.com/nYYECfT.png" width=50% height=50%>
-
-<img src="https://i.imgur.com/bQOlv9I.png" width=50% height=50%>
 
 ### Percentages of Different Sentiments for Apple
 
