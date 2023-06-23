@@ -131,7 +131,7 @@ As a team, the next step we should take is to further investigate and explore mo
 
 [Modeling notebook](https://github.com/QiCai1995/NLP_Twitter_Sentiment/blob/main/Final_Notebooks/Modeling.ipynb)
 
-[Presentation](link..)
+[Presentation](https://github.com/QiCai1995/NLP_Twitter_Sentiment/blob/main/Presentation.pdf)
 
 
 
