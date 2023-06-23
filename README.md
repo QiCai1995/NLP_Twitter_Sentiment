@@ -52,13 +52,17 @@ We started off by creating a pipelines for dummy classifier as our baseline mode
 ## Results
 
 The best model was the logistic regression model based on the accuracy score of 0.87. 
-                    Confusion Matrix                                            ROC Curve
-<img src="https://i.imgur.com/nYYECfT.png" width=50% height=50%> <img src="https://i.imgur.com/bQOlv9I.png" width=50% height=50%>
+
+Confusion Matrix
+<img src="https://i.imgur.com/nYYECfT.png" width=50% height=50%> 
+
+ROC Curve
+<img src="https://i.imgur.com/bQOlv9I.png" width=50% height=50%>
 
 
 ### Percentages of Different Sentiments for Apple
 
-![Sentiment distribution for Apple](https://i.imgur.com/3lSxwCP.png)
+<img src="https://i.imgur.com/3lSxwCP.png" width=50% height=50%>
 
 Most tweets regarding to Apple products are neutral (51.9%), follow by positive (40.2%), and negative (7.9%).
 
@@ -68,12 +72,20 @@ Most tweets regarding to Apple products are neutral (51.9%), follow by positive 
 
 ### Sentiment Analysis of iPad
 
-![iPad positives](Images/ipadpositives.png)      ![iPad negatives](Images/ipadnegatives.png)
+Positive Tweets
+<img src="https://i.imgur.com/82u4RoX.png" width=50% height=50%>
+
+Negative Tweets
+<img src="https://i.imgur.com/hYIuxlC.png" width=50% height=50%>
 
 
 ### Sentiment Analysis of iPhone
 
-![iPhone positives](Images/iphonepositives.png)      ![iPhone negatives](Images/iphonenegatives.png)
+Positive Tweets
+<img src="https://i.imgur.com/YIcMf86.png" width=50% height=50%>
+
+Negative Tweets
+<img src="https://i.imgur.com/a4qTKKl.png" width=50% height=50%>
 
 
 ## Conclusions
@@ -105,14 +117,13 @@ To improve our products in the future, for iPad, we want to focus on improving t
 As a team, the next step we should take is to further investigate and explore more pain points on our products, we should also try to build a model around specific pain points to further extract more useful info from the public views, and also to explore other company brands focusing on their product design in order to enhance our products in the future.
 
 
-### Repository Structure
+### Links
 
-├── Data                <- Externally sourced data and cleaned data
-├── Draft_Notebooks     <- Draft notebooks folder for preliminary notebooks
-├── Final_Notebooks     <- Final notebooks folder contanins Cleaning, EDA, and Modeling notebooks
-├── Presentation.pdf    <- PDF version of project presentation
-├── Images              <- Both sourced externally and generated from code
-└── README.md           <- Externally sourced data The top-level README for reviewers of this project
+[Cleaning notebook](https://github.com/QiCai1995/NLP_Twitter_Sentiment/blob/main/Final_Notebooks/Cleaning.ipynb)
+[EDA notebook](https://github.com/QiCai1995/NLP_Twitter_Sentiment/blob/main/Final_Notebooks/EDA.ipynb)
+[Modeling notebook](https://github.com/QiCai1995/NLP_Twitter_Sentiment/blob/main/Final_Notebooks/Modeling.ipynb)
+[Presentation](link..)
+
 
 
 
