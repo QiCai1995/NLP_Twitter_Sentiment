@@ -54,9 +54,11 @@ We started off by creating a pipelines for dummy classifier as our baseline mode
 The best model was the logistic regression model based on the accuracy score of 0.87. 
 
 Confusion Matrix
+
 <img src="https://i.imgur.com/nYYECfT.png" width=50% height=50%> 
 
 ROC Curve
+
 <img src="https://i.imgur.com/bQOlv9I.png" width=50% height=50%>
 
 
@@ -73,18 +75,22 @@ Most tweets regarding to Apple products are neutral (51.9%), follow by positive 
 ### Sentiment Analysis of iPad
 
 Positive Tweets
+
 <img src="https://i.imgur.com/82u4RoX.png" width=50% height=50%>
 
 Negative Tweets
+
 <img src="https://i.imgur.com/hYIuxlC.png" width=50% height=50%>
 
 
 ### Sentiment Analysis of iPhone
 
 Positive Tweets
+
 <img src="https://i.imgur.com/YIcMf86.png" width=50% height=50%>
 
 Negative Tweets
+
 <img src="https://i.imgur.com/a4qTKKl.png" width=50% height=50%>
 
 
@@ -120,8 +126,11 @@ As a team, the next step we should take is to further investigate and explore mo
 ### Links
 
 [Cleaning notebook](https://github.com/QiCai1995/NLP_Twitter_Sentiment/blob/main/Final_Notebooks/Cleaning.ipynb)
+
 [EDA notebook](https://github.com/QiCai1995/NLP_Twitter_Sentiment/blob/main/Final_Notebooks/EDA.ipynb)
+
 [Modeling notebook](https://github.com/QiCai1995/NLP_Twitter_Sentiment/blob/main/Final_Notebooks/Modeling.ipynb)
+
 [Presentation](link..)
 
 
