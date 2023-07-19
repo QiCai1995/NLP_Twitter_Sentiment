@@ -9,12 +9,12 @@
 
 In today's interconnected world, social media has a profound impact not only on individuals but also on businesses' day-to-day operations. It has become essential for companies to understand public opinion about their products and brand, and swiftly adapt to changing trends in order to stay relevant and achieve financial success.
 
-Major companies like Apple and Google leverage events like Apple's WWDC and Google's I/O to unveil new products, software updates, and share their future visions. These events provide valuable opportunities for marketing teams to assess interest and gather insights from the public. Additionally, conferences attended by senior leadership offer chances to engage with fans and provide glimpses of what lies ahead. These occasions are ideal for companies to monitor public sentiment and gauge the reception of their announcements.
+Major companies like Apple and Google leverage events like Apple's WWDC and Google's I/O to unveil new products, and software updates, and share their future visions. These events provide valuable opportunities for marketing teams to assess interest and gather insights from the public. Additionally, conferences attended by senior leadership offer chances to engage with fans and provide glimpses of what lies ahead. These occasions are ideal for companies to monitor public sentiment and gauge the reception of their announcements.
 
 Among the various mediums available, Twitter stands out as a powerful resource for businesses to understand public opinion. With millions of users sharing their thoughts on diverse topics every day, Twitter provides a wealth of information for companies. In this project, we have been contracted by Apple to conduct sentiment analysis on tweets related to the SXSW (South by Southwest) Conference. Our analysis will address the following key questions:
 
 
-What specific aspects of Apple products are mentioned in tweets expressing positive and negative sentiment? 
+What specific aspects of Apple products are mentioned in tweets expressing positive and negative sentiments? 
 
 Can we extract valuable insights from the tweets to understand customer preferences, product pain points, or areas for improvement?
 
@@ -32,26 +32,26 @@ Utilize the dataset to build a brand sentiment analysis model. Train a machine l
 ## Data
 
 
-We used a dataset from [data.world](https://data.world/crowdflower/brands-and-product-emotions), and the tweet analysis witin the dataset is created and collected by Appen. This data set contains over 9,000 tweets about Apple and Google. The tweet labels were generated through crowdsourcing and indicate the specific emotion conveyed as well as the product, service, or company to which that emotion is directed, based on the content of the tweets.
+We used a dataset from [data.world](https://data.world/crowdflower/brands-and-product-emotions), and the tweet analysis within the dataset is created and collected by Appen. This data set contains over 9,000 tweets about Apple and Google. The tweet labels were generated through crowdsourcing and indicate the specific emotion conveyed as well as the product, service, or company to which that emotion is directed, based on the content of the tweets.
 
 
 ## Methods
 
-First step, we prepared our data.
-We started of from understanding the data and cleaning the data. There was a lot of missing values in the brand/product column so we came up with a loop to assign them to certain product names based on the tweet content. For emotion column, we assigned "No emotion" to neutral. We also feature engineered a column "Brand" assigning brands Google, Apple, and Unknown to each tweet.
+In the first step, we prepared our data.
+We started off by understanding the data and cleaning the data. There were a lot of missing values in the brand/product column so we came up with a loop to assign them to certain product names based on the tweet content. For the emotion column, we assigned "No emotion" to neutral. We also feature-engineered a column "Brand" assigning brands Google, Apple, and Unknown to each tweet.
 
-Second step, we started our EDA process along with WordCloud for visualization.
-During the EDA process, we mainly focus on positive and negative tweets for Apple products since that was our business goal. we started with looking into Apple, and later dived deep into iPhone and iPad to extract specific pain points of target products. To use WordCloud, we went over very similar steps as NLP preprocessing. We first tokenized the tweets, then removed customized stopwords and punctionations, then lemmatized, and then vectorized using TfidfVectorizer.
+In the second step, we started our EDA process along with WordCloud for visualization.
+During the EDA process, we mainly focus on positive and negative tweets for Apple products since that was our business goal. we started by looking into Apple and later dived deep into iPhone and iPad to extract specific pain points of target products. To use WordCloud, we went over very similar steps as NLP preprocessing. We first tokenized the tweets, then removed customized stopwords and punctuations, then lemmatized, and then vectorized using TfidfVectorizer.
 
 
 Lastly, we moved on to modeling. 
 We defined our target as positive or negative emotions. Features are tokenized words from tweets.
-We started off by creating a pipelines for dummy classifier as our baseline model, the pipeline includes preprocessing steps, SMOTE for class imbalance in our dataset, and instantiating the model. We tried various models including random forest, logistic regression classifier, Decision Tree, K-nearest Neighbor, and Naive Bayes classifier. Also used GridSearch to find the optimal parameters.
+We started off by creating a pipeline for a dummy classifier as our baseline model, the pipeline includes preprocessing steps, SMOTE for class imbalance in our dataset, and instantiating the model. We tried various models including random forest, logistic regression classifier, Decision Tree, K-nearest Neighbor, and Naive Bayes classifier. Also used GridSearch to find the optimal parameters.
 
 
 ## Results
 
-The best model was the logistic regression model based on the accuracy score of 0.87. 
+The best model was the logistic regression model based on an accuracy score of 0.87. 
 
 Confusion Matrix
 
@@ -66,7 +66,7 @@ ROC Curve
 
 <img src="https://i.imgur.com/3lSxwCP.png" width=50% height=50%>
 
-Most tweets regarding to Apple products are neutral (51.9%), follow by positive (40.2%), and negative (7.9%).
+Most tweets regarding Apple products are neutral (51.9%), follow by positive (40.2%), and negative (7.9%).
 
 ### Sentiment Analysis of Apple 
 
@@ -95,13 +95,13 @@ Negative Tweets
 
 
 ## Conclusions
-What specific aspects of Apple products are mentioned in tweets expressing positive and negative sentiment?
+What specific aspects of Apple products are mentioned in tweets expressing positive and negative sentiments?
 
 Can we extract valuable insights from the tweets to understand customer preferences, product pain points, or areas for improvement?
 
-Most tweets regarding to Apple products are neutral (51.9%), follow by positive (40.2%), and negative (7.9%).
+Most tweets regarding Apple products are neutral (51.9%), follow by positive (40.2%), and negative (7.9%).
 
-To futher investigate, we used WordCloud in the EDA notebook to analyze most frequent words among positive and negative sentiment tweets to discover infomative aspects of Apple products, specifically iPhone and iPad, to further provide product enhancement areas.
+To further investigate, we used WordCloud in the EDA notebook to analyze the most frequent words among positive and negative sentiment tweets to discover informative aspects of Apple products, specifically iPhone and iPad, to further provide product enhancement areas.
 
 iPhone - Positives & Negatives:
 
@@ -112,7 +112,7 @@ It means people are probably having problems with battery life and charging time
 
 iPad - Positives & Negatives:
 
-In the iPad Positive tweets we can see the most frequent words being ‘NEW’ , ‘APP’, where people are talking about how they are enjoying new items and apps on the app store, as well as ‘FREE’ shows up again, where people are liking free apps and games.
+In the iPad Positive tweets we can see the most frequent words being ‘NEW’, and ‘APP’, where people are talking about how they are enjoying new items and apps on the app store, as well as ‘FREE’ shows up again, where people are liking free apps and games.
 
 On the other hand, negative tweets on iPad seems to focus on the design, some people even wrote that the design of the iPad was referred to as a “design headache”. And a lot of people seem to talk about the quality of the graphics on the iPad.
 
@@ -120,7 +120,7 @@ On the other hand, negative tweets on iPad seems to focus on the design, some pe
 To improve our products in the future, for iPad, we want to focus on improving the quality of its design, and the quality of the graphics, for a better runtime. For the iPhone, we definitely want to recommend improving its battery for a better battery life, and possibly updating the charging cable type for a more efficient charge. For overall enhancement on both products, we think it is ideal to look into the quality and speed of graphics for both devices and look into new possible battery prospects. We can also confidently say that giving away free products at new product promos is a good way to gain positive feedback from the public
 
 ## Our Next Step
-As a team, the next step we should take is to further investigate and explore more pain points on our products, we should also try to build a model around specific pain points to further extract more useful info from the public views, and also to explore other company brands focusing on their product design in order to enhance our products in the future.
+As a team, the next step we should take is to further investigate and explore more pain points on our products, we should also try to build a model around specific pain points to further extract more useful info from the public views and also explore other company brands focusing on their product design in order to enhance our products in the future.
 
 
 ### Links
