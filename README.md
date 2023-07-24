@@ -37,8 +37,7 @@ We used a dataset from [data.world](https://data.world/crowdflower/brands-and-pr
 
 ## Methods
 
-In the first step, we prepared our data.
-We started off by understanding the data and cleaning the data. There were a lot of missing values in the brand/product column so we came up with a loop to assign them to certain product names based on the tweet content. For the emotion column, we assigned "No emotion" to neutral. We also feature-engineered a column "Brand" assigning brands Google, Apple, and Unknown to each tweet.
+In the first step, we prepared our data. We started off by understanding the data and cleaning the data. There were a lot of missing values in the brand/product column so we came up with a loop to assign them to certain product names based on the tweet content. For the emotion column, we assigned "No emotion" to neutral. We also feature-engineered a column "Brand" assigning brands Google, Apple, and Unknown to each tweet.
 
 In the second step, we started our EDA process along with WordCloud for visualization.
 During the EDA process, we mainly focus on positive and negative tweets for Apple products since that was our business goal. we started by looking into Apple and later dived deep into iPhone and iPad to extract specific pain points of target products. To use WordCloud, we went over very similar steps as NLP preprocessing. We first tokenized the tweets, then removed customized stopwords and punctuations, then lemmatized, and then vectorized using TfidfVectorizer.
