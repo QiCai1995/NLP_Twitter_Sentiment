@@ -50,7 +50,7 @@ We started off by creating a pipeline for a dummy classifier as our baseline mod
 
 ## Results
 
-The best model was the logistic regression model based on an accuracy score of 0.87. 
+The best model was a logistic regression model with an accuracy score of 0.87. 
 
 Confusion Matrix
 
